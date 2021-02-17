@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 10px solid black;
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+        }
+        .red{background-color: tomato;
+        /* 기본값이기 때문에 설정값을 줘도 변화가 없음. 태그순으로 출력 */
+        position: static;
+        left: 50px;}
+        .blue{background-color: turquoise;
+        /* 자신의 원래 위치를 기준으로 설정한만큼 이동 */
+        position: relative;
+        left: 50px;}
+        .green{background-color: yellowgreen;
+        /* 0,0 (좌측상단)을 기준으로 설정한만큼 이동 */
+        position: fixed;
+        left: 500px;
+        top: 500px;}
+        .pink{
+            background-color: plum;
+            /* 부모태그(static이 아닐경우만 적용)의 좌측상단을 기준으로 설정한만큼 이동 */
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 30px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box red">
+    <div class="box pink"></div>
+
+    </div>
+    <div class="box blue"></div>
+    <div class="box green"></div>
+    <div class="box green">
+        <div class="box pink"></div>
+    </div>
+</body>
+</html>

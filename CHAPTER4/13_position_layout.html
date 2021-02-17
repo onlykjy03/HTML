@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .red{
+            background-color: red;
+            left: 10px; top: 10px;
+
+        }
+        .green{
+            background-color: seagreen;
+            left: 50px; top: 50px;
+        }
+        .blue{
+            background-color: steelblue;
+            left: 90px; top: 90px;
+        }
+        body>div{
+            width: 400px;
+            /* 자식이 absolute 이면 부보는 높이가 있어야 영역이 잡힌다. */
+            height: 100px;
+            border: 3px solid black;
+            /* static 이 아니어야 한다. (모든 태그는 static 이 기본값)*/
+            position: relative;
+            /* 자식태그는 부모태그 영역 안에서만 보임 */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1 div 모두 block 속성 -->
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptates!</h1>
+
+    <!-- div에 position 값을 static 외에 것으로 지정해주지 않으면 div.box는 body를 부모로 인식. -->
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae odit iure quibusdam dolor, assumenda numquam deserunt molestias repellat, natus itaque aliquid, accusantium omnis reiciendis soluta voluptatibus maxime non a.</h1>
+</body>
+</html>

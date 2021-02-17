@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            /* display: none; */
+            /* display: block; */
+            display: inline;
+            /* display: inline-block; */
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+        }
+
+        span{
+            background-color: sandybrown;
+        }
+        div{
+            background-color: steelblue;
+        }
+        p{
+            background-color: teal;
+        }
+        p:nth-of-type(2){
+            /* 공간도 없음 */
+            /* display: none; */
+            
+            /* 공간은 남김 */
+            visibility: hidden;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <span>Dummy</span>
+    <div id="box">
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, excepturi!</span>
+        
+    </div>
+    <span>Dummy</span>
+
+
+    <span>Dummy</span>
+    <div id="box2">
+   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, excepturi!
+    </div>
+    <span>Dummy</span>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, doloremque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, impedit.</p>
+
+</body>
+</html>
