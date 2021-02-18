@@ -1,0 +1,116 @@
+*{margin: 0; padding: 0;}
+body{font-family: sans-serif;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: 0;}
+
+#main_header{
+    /* 중앙정렬공식 */
+    width: 960px;
+    margin: 0 auto;
+
+    height: 160px;
+    position: relative;
+}
+
+#main_header>#title{
+    position: absolute;
+    left: 20px; top: 30px;
+}
+
+#main_header>#main_gnb{
+    position: absolute;
+    right: 0; top: 0;
+}
+
+#main_header>#main_lnb{
+    position: absolute;
+    right: 0; bottom: 10px;
+}
+
+#title{
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+#main_gnb>ul{
+    overflow: hidden;
+}
+
+#main_gnb>ul>li{
+    float: left;
+}
+
+#main_gnb>ul>li>a{
+    /* 블럭으로 설정해서 글자외에 공간에 마우스 커서가 위치해도 선택가능하게 함 */
+    display: block;
+    padding: 2px 10px;
+    border: 1px solid black;
+}
+
+/* 마우스를 올렸을 때 설정 */
+#main_gnb>ul>li>a:hover{
+    background: black;
+    color: white;
+}
+
+/* 테두리 끝쪽을 둥글게  */
+#main_gnb>ul>li:first-child>a{
+    border-radius: 10px 0 0 10px;
+}
+
+#main_gnb>ul>li:last-child>a{
+    border-radius: 0px 10px 10px 0;
+}
+
+#main_lnb>ul{
+    /* 자식에게 left 를 주면 부모는 hidden : 수평공식 */
+    overflow: hidden;
+}
+
+#main_lnb>ul>li{
+    float: left;
+}
+
+#main_lnb>ul>li>a{
+    display: block;
+    padding: 2px 10px;
+    border: 1px solid black;
+}
+
+#main_lnb>ul>li>a:hover{
+    background: black;
+    color: white;
+}
+
+#main_lnb>ul>li:first-child>a{
+    border-radius: 10px 0 0 10px;
+}
+
+#main_lnb>ul>li:last-child>a{
+    border-radius: 0px 10px 10px 0;
+}
+
+.item{
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+.thumbnail{
+    float: left;
+}
+
+.description{
+    float: left;
+    margin-left: 10px;
+}
+
+.description>strong {
+    display: block;
+    width: 120px;
+    /* 긴 글자 생략 공식 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
