@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css.css">
+    <title>대구광역시</title>
+    <style>
+        .slidewrap
+        {
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 500px 900px 1fr;
+            grid-template-areas: 
+            'slidemenu1 slideimg1 box1';
+        }
+        .slidemenu
+        {
+            grid-area: slidemenu1;
+            margin-top: 36px;
+            margin-left: 449px;
+        }
+        .slideimg
+        { 
+            grid-area:slideimg1;
+            text-align: center;
+        }
+
+        .box
+        {
+            grid-area: box1;
+            margin-top: 36px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div id="header">
+            <div id="logo"><img src="컬러풀대구.PNG" alt=""></div>
+
+            <div id="main_menu">
+                <ul id="nav">
+                    <li class="frst_menu">
+                        <h4>민원·소통·참여</h4>
+                        <ul>
+                            <li><a href="#">민원안내</a></li>
+                            <li><a href="#">두드리소(민원/제안)</a></li>
+                            <li><a href="#">사이버추모관</a></li>
+                            <li><a href="#">안전신문고</a></li>
+                            <li><a href="#">대구시민원탁회의</a></li>
+                            <li><a href="#">공익제보</a></li>
+                            <li><a href="#">공익비리 익명신고</a></li>
+                            <li><a href="#">복지 및 인권옴부즈만</a></li>
+                            <li><a href="#">행정서비스 헌장</a></li>
+                            <li><a href="#">행복민원배심원제</a></li>
+                            <li><a href="#">시민 참여</a></li>
+                            <li><a href="#">지방분권</a></li>
+                            <li><a href="#">정책토론</a></li>
+                            <li><a href="#">설문/투표</a></li>
+                            <li><a href="#">토크대구</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="frst_menu">
+                        <h4>정보공개</h4>
+                        <ul>
+                            <li><a href="#">행정정보공개</a></li>
+                            <li><a href="#">정책실명제</a></li>
+                            <li><a href="#">알림정보</a></li>
+                            <li><a href="#">통합자료실</a></li>
+                            <li><a href="#">공공저작물</a></li>
+                            <li><a href="#">공공데이터개방</a></li>
+                            <li><a href="#">계약정보</a></li>
+                            <li><a href="#">감사정보</a></li>
+                            <li><a href="#">통계정보</a></li>
+                        </ul>
+                    </li>
+                    <li class="frst_menu">
+                        <h4>대구소개</h4>
+                        <ul>
+                            <li><a href="#">시장비전</a></li>
+                            <li><a href="#">시청안내</a></li>
+                            <li><a href="#">일반현황</a></li>
+                            <li><a href="#">대구의 상징</a></li>
+                            <li><a href="#">스토리인대구</a></li>
+                            <li><a href="#">역사</a></li>
+                            <li><a href="#">컬러풀뉴스룸</a></li>
+                            <li><a href="#">교류도시</a></li>
+                        </ul>
+                    </li>
+                    <li class="frst_menu">
+                        <h4>분야별정보</h4>
+                        <ul>
+                            <li><img src="1.png" alt=""><a href="#">문화·관광·체육</a></li>
+                            <li><img src="2.png" alt=""><a href="#">교통</a></li>
+                            <li><img src="3.png" alt=""><a href="#">복지</a></li>
+                            <li><img src="4.png" alt=""><a href="#">여성·가족·교육</a></li>
+                            <li><img src="5.png" alt=""><a href="#">건강·보건·위생</a></li>
+                            <li><img src="6.png" alt=""><a href="#">산업·경제</a></li>
+                            <li><img src="7.png" alt=""><a href="#">환경</a></li>
+                            <li><img src="8.png" alt=""><a href="#">소방·안전</a></li>
+                            <li><img src="9.png" alt=""><a href="#">도시주택·건설</a></li>
+                            <li><img src="10.png" alt=""><a href="#">행정·재정·세정</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="header_nav">
+            <span><a href="">홈</a></span>
+            <span><a href="">전체메뉴</a></span>
+            <span><a href="">로그인</a></span>
+            <span><a href="">회원가입</a></span>
+        </div>
+    </header>
+
+    <div class="search">
+        <input type="search">
+        <img id="korona" src="코로나바로가기.PNG" alt="">
+
+    </div>
+    <div class="search">
+        <span id="search_info">자주찾는검색어 ▶</span>
+        <span><a href="">채용</a></span>
+        <span><a href="">대구관광</a></span>
+        <span><a href="">청년정책</a></span>
+        <span><a href="">대구소식당</a></span>
+    </div>
+    <div class="slidewrap">
+        <div class="slidemenu">
+            <img src="목록.PNG" alt="">
+            <!-- <div>대구주요정책</div>
+        <div>컬러풀뉴스</div>
+        <div>두드리소</div> -->
+        </div>
+
+        <div class="slideimg">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <div>
+                <ul class="slidelist">
+                    <li><a href="">
+                            <img src="소식1.jpg" alt="">
+                        </a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="">
+                            <img src="소식2.jpg" alt="">
+                        </a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="">
+                            <img src="소식3.jpg" alt="">
+                        </a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+        <div class="box">
+            <img src="소통.PNG" alt="">
+        </div>
+
+    </div>
+
+
+    <div id="menu_3">
+        <center>
+            <a href="#"><img src="icon02.png" alt=""></a>
+            <a href="#"><img src="icon03.png" alt=""></a>
+            <a href="#"><img src="icon04.png" alt=""></a>
+            <a href="#"><img src="icon05.png" alt=""></a>
+            <a href="#"><img src="icon06.png" alt=""></a>
+            <a href="#"><img src="icon01.png" alt=""></a>
+            <a href="#"><img src="icon07.png" alt=""></a>
+            <a href="#"><img src="icon08.png" alt=""></a>
+            <a href="#"><img src="icon09.png" alt=""></a>
+            <a href="#"><img src="icon10.png" alt=""></a>
+            <a href="#"><img src="icon00.png" alt=""></a>
+    </center>
+    </div><br>
+
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/vHLvmFnveiY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center><br>
+    <div id="main_footer">
+        <center>
+            <br>
+            <br>
+            <hr>
+        <img src="footer.PNG" alt="">
+    </center>
+    </div>
+    
+
+
+</body>
+
+</html>

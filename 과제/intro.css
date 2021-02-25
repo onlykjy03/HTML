@@ -1,0 +1,19 @@
+
+.intro{
+    background: linear-gradient(white 50%, rgb(189,237,252) 50%);
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.intro_img img{
+    border: 3px solid rgb(0, 75, 151);
+    border-radius: 5%;    
+    margin-right: 20px;
+
+}
+
+.intro_footer{
+    text-align: center;
+}

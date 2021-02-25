@@ -1,0 +1,11 @@
+body {
+  color: #345123;
+  font-size: 16px;
+  margin: 100px;
+}
+a {
+  color: #345123;
+}
+a:hover {
+  color: #845623;
+}

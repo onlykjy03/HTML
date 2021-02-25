@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 한글깨짐방지 -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icon{
+            /* i태그는 inline형식이라 width, height가 먹히지않음 */
+            display: block;
+        }
+        .bg-header_left_button{
+            width: 62px;
+            height: 32px;;
+            /* 시작점을 (-1,-1) */
+            /* background: url('스프라이트이미지/css_sprites.png') -1px -1px; */
+            background: url('스프라이트이미지/css_sprites.png') ;
+            background-position:-1px -1px;
+
+        }
+        .bg-header_right_button{
+            width: 32px;
+            height: 32px;;
+            background: url('스프라이트이미지/css_sprites.png') -65px -1px;
+
+        }
+
+        #main_header{
+            /* 이미지 크기에 맞게 height 값 설정 */
+            height: 45px;
+            background: url('스프라이트이미지/header_background.png');
+        }
+
+    </style>
+</head>
+<body>
+    <header id="main_header">
+
+    </header>
+    <i class="icon bg-header_left_button"></i>
+    <i class="icon bg-header_right_button"></i>
+</body>
+</html>
